@@ -15,3 +15,5 @@ int main() {
   cout << lcm;
 }
 /* iske ek trick h gcd nikalo and phir lcm= (a*b)/gcd krdo*/
+/*gcd ke liye euclid algo lg jayega*/
+/*or ek aur brute force method h ki dono ke common multiple dhundo aur unka first one print krdo*/
