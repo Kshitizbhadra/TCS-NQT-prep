@@ -1,28 +1,30 @@
-#include <iostream>
 #include <climits>
+#include <iostream>
 using namespace std;
 
 int main() {
 
-    int arr[] = {10, 20, 5, 8, 15};
-    int n = 5;
+  int arr[] = {10, 20, 5, 8, 15};
+  int n = 5;
 
-    int largest = INT_MIN;
-    int secondLargest = INT_MIN;
+  int largest = INT_MIN;
+  int secondLargest = INT_MIN;
 
-    for (int i = 0; i < n; i++) {
+  for (int i = 0; i < n; i++) {
 
-        if (arr[i] > largest) {
-            secondLargest = largest;
-            largest = arr[i];
-        }
-
-        else if (arr[i] > secondLargest && arr[i] != largest) {
-            secondLargest = arr[i];
-        }
+    if (arr[i] > largest) {
+      secondLargest = largest;
+      largest = arr[i];
     }
 
-    cout << secondLargest;
+    else if (arr[i] > secondLargest && arr[i] != largest) {
+      secondLargest = arr[i];
+    }
+  }
 
-    return 0;
+  cout << secondLargest;
+
+  return 0;
 }
+
+/*find the second largest in array*/
